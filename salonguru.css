@@ -80,6 +80,7 @@ ul.primary-menu {padding:5px !important;}
 .home #primary #main .entry-content {margin: 0; }
 .home .sow-image-container .so-widget-image, .home .view, .home .view img {width: 100% !important; }
 .home #content, .home #content #primary {width: 100%; max-width: 100%; }
+.home .banner-row {padding:0px !important}
 .page-id-782 .entry-content {margin:0px;}
 .page-id-782 .hentry {margin:0px;padding:0px;}
 .page-id-782 #masthead {background: transparent;margin-bottom: 0em;}
