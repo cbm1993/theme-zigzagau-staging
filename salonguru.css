@@ -6,7 +6,30 @@
 
 @media (min-width: 1000px) {
 /* DESKTOP */
+.site-header  .row0 .column:nth-child(1) {text-align: left; display:block !important; }
+.site-header .row0 {align-items: center !important; padding:10px 40px !important;}
+.site-header .logo {width: 400px !important; }
+.site-header .row0 a.social-media-button {font-size:20px !important;}
 
+.site-main h1 {padding-bottom:20px !important;}
+.site-main h2 {font-size:20px !important;}
+
+.page-template-default article, .post-template-default article, .error404 section {padding: 30px !important;}
+
+.page-id-782 .seo-row p {font-size:18px!important;}
+.page-id-782 .reviews-row {padding: 60px 20px !important;}
+.page-id-782 .reviews-row h2,.page-id-782 .seo-row h2  {font-size:36px !important;}
+.page-id-782 .seo-row {min-height:550px !important;}
+.page-id-782 .view h2 {font-size:42px!important;}
+
+.alignleft {float: none;display: block; margin: 0 auto;}
+    
+.ngg-gallery-thumbnail-box {width: 32% !important;}
+    
+.wout-button:last-child {margin:0; font-size:14px !important;}
+
+.single-contact .site-main h1 {margin-top:60px !important;}
+    
 }
 
 /* MOBILE BELOW (NO BREAKPOINTS) */
@@ -20,13 +43,21 @@
 body {background: #353535;color: #d8d8d8;background-image:url(https://www.barbershop-zigzag.com.au/files/2024/08/green-bg.jpg)}
 body article .panel-grid > div {max-width: 100% !important;}
 body .primary-menu ul {pointer-events: none;top:calc(100% + 1rem);}
-#content p, #content a, #content ul {font-family: 'Roboto', sans-serif!important; font-size: 15px; }
-#content ul {margin: 0 0 1.5em 0em; font-size: 15px;}
-#content a, #content a:active, #content a:visited, a:focus {color: #f4d540; text-decoration: none; }
-#content a:hover {text-decoration: underline; }
+.site-main p, #content a, #content ul {font-family: 'Roboto', sans-serif!important; font-size: 15px; }
+.site-main ul {margin: 0 0 1.5em 0em; font-size: 15px;}
+.site-main a, #content a:active, #content a:visited, a:focus {color: #f4d540; text-decoration: none; }
+.site-main a:hover {text-decoration: underline; }
 
-#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {font-family: 'Roboto', sans-serif; text-transform: uppercase;}
-#content h1 { color: #f4d540;  }
+.site-main h1, .site-main h2, .site-main h3, .site-main h4, .site-main h5, .site-main h6 {font-family: 'Roboto', sans-serif; text-transform: uppercase;}
+.site-main h1 {color: #f4d540;text-align:left;padding-bottom:20px;}
+.site-main h2 {font-size:18px;}
+
+.page-template-default article, .post-template-default article, .error404 section {padding: 0px;}
+
+.ngg-gallery-thumbnail-box {width: 100%;}
+.ngg-gallery-thumbnail img {width: 100%;height: auto;}
+
+.alignleft {float: center;}
 
 /* HEADER */
 .site-header {border-bottom: 0px solid #d8d8d8 !important;}
@@ -34,20 +65,20 @@ body .primary-menu ul {pointer-events: none;top:calc(100% + 1rem);}
 .site-header  section {max-width: 100%; }
 .site-header .section .so-panel {margin-bottom: 0 !important; }
 .site-header .fixed {/*background: rgba(53, 53, 53, 0.8) !important;*/ padding: 10px; }
-.site-header .logo {width: 400px; max-width: 100%; opacity: 0.9; margin: 10px auto; }
+.site-header .logo {width: 320px; max-width: 100%; opacity: 0.9; margin: 10px auto; }
 .site-header  .social {position: absolute; right: 20px; top: 2em; text-align: right; }
 .site-header .social a.telephone {color: #d8d8d8; text-decoration: none; }
 .site-header  .social a[class*="sg-social"] {background-color: transparent;  width: 32px; height: 32px; margin-top: 10px; text-indent: 999em; vertical-align: top; overflow: hidden; }
 .site-header .panel-grid-cell:nth-child(1) {padding-top:20px;}
 .site-header  {background: transparent; margin-bottom: 1em; }
 
-.site-header .row0 {display: flex;justify-content: space-between;align-items:center;padding:10px 40px;}
-.site-header .row0 .column {flex: 1 0 33%;}
-.site-header  .row0 .column:nth-child(1) {text-align: left; }
-.site-header  .row0 .column:nth-child(2) {text-align: center; }
+.site-header .row0 {display: flex;justify-content: space-between; align-items:left;padding:10px 10px;}
+.site-header  .row0 .column:nth-child(1) {display:none; }
+.site-header  .row0 .column:nth-child(2) {text-align: left;}
 .site-header  .row0 .column:nth-child(3) {text-align: right; }
+.site-header .row0 .column:nth-child(3) {flex: 0 0 auto;}
 .site-header  .row0 .socialmedia {text-align:right;}
-.site-header .row0 a.social-media-button {padding:5px;font-size:20px;line-height:1;text-decoration:none;color:#fff!important;}
+.site-header .row0 a.social-media-button {padding:5px;font-size:16px;line-height:1;text-decoration:none;color:#fff!important;}
 .site-header  .row0 a.social-media-button:hover {color: #f4d540!important;}
 .site-header  .row0 .wout-button:hover {background:#f4d540;}
 
@@ -59,6 +90,16 @@ body .primary-menu ul {pointer-events: none;top:calc(100% + 1rem);}
 .primary-menu .current-menu-ancestor > a { color:#f4d540; }
 .primary-menu .sub-menu { background:rgba(0,0,0,0.8); box-shadow:none; }
 ul.primary-menu {padding:5px !important;}
+
+.nav-toggle {position: absolute;bottom: 40px !important; right:20px; font-size:30px;background: none!important;border:none !important;color: #fff !important;}
+.menu-modal-inner {background: rgba(53, 53, 53, 0.9); !important;}
+.modal-menu a {font-weight: 600 !important;color: #fff !important;font-size:16px !important;text-transform: uppercase !important;}
+.modal-menu .sub-menu-toggle svg polygon {fill: #b5aca6  !important;}
+.modal-menu ul li {border-left: 0.75rem solid #b5aca6  !important;}
+.modal-menu > li {border-bottom: 1px solid #b5aca6  !important;}
+.modal-menu .sub-menu {padding-left: 0 !important;margin-left: 0 !important;}
+.modal-menu .sub-menu li {padding-left: 0 !important;border-top: 1px solid #b5aca6  !important;}
+.modal-menu .sub-menu a {text-transform: uppercase !important; font-size:14px !important;}
 
 /* SECONDARY */
 #secondary {margin-top: 3em; padding-left: 10px; }
@@ -86,13 +127,13 @@ ul.primary-menu {padding:5px !important;}
 .page-id-782 #masthead {background: transparent;margin-bottom: 0em;}
 .page-id-782 #content {width: 100%;max-width: 100%;}
 .page-id-782 #primary #main {padding: 0px;}
-.page-id-782 #primary .panel-grid .width-full-1200 {width: 100%;max-width: 100%;padding-right: calc((100% - 1200px) / 2);padding-left: calc((100% - 1200px) / 2);}
 .page-id-782 .banner-row:after {content:'';position:absolute;bottom:0px;left:0px;height:30px;width:100%;background: url(https://www.barbershop-zigzag.com.au/files/2024/08/border.jpg);}
 .page-id-782 .banner-row {position:relative;}
-.page-id-782 .seo-row {min-height:550px;}
-.page-id-782 .seo-row p {font-size:18px!important;}
-.page-id-782 .reviews-row {padding:4em 0em;}
-.page-id-782 .reviews-row h2, .page-id-782 .seo-row h2 {font-size:36px; text-transform: uppercase;}
+.page-id-782 .seo-row {min-height:380px;padding:30px;}
+.page-id-782 .seo-row p {font-size:15px;}
+.page-id-782 .seo-row h2 {font-size:22px;}
+.page-id-782 .reviews-row {padding: 30px 20px;}
+.page-id-782 .reviews-row h2, .page-id-782 .seo-row h2 {font-size:22px; text-transform: uppercase;}
 .page-id-782 .reviews-row .ysre-reviews-summary, .page-id-782 .reviews-row .ysre-reviews-summary span {font-family: 'Roboto', sans-serif!important;text-align:center;font-size:16px;color:#fff!important;}
 .page-id-782 .reviews-row .review_item {padding: 10px;color: #353535;border: 0px solid #AAA;border-radius: 0px;font-weight:400!important;background-color: #fff;box-shadow: 0px 0px 0px #999;text-align:center;}
 .page-id-782 .reviews-row .ysre-ui-stream-message, .page-id-782 .reviews-row .ysre-reviewer-name_carousel {font-family: 'Roboto', sans-serif!important;font-weight:400!important;color:#fff!important;}
@@ -101,18 +142,20 @@ ul.primary-menu {padding:5px !important;}
 .page-id-782 .reviews-row #yourSalonReviews .review_item_inner_carousel, .page-id-782 .reviews-row #yourSalonReviews .review_item_carousel {background:none;}
 .page-id-782 .reviews-row .bx-wrapper {background:transparent;}
 .page-id-782 .services-row {padding:0px 30px;}
+.page-id-782 .services-row h2 {font-size:26px;}
 .page-id-782 .view .mask {z-index:2;top:90%;border:0px;left: 20%;transform: translate(-10%, -50%);background:transparent;}
 .page-id-782 .view-19:hover .mask {top: 50%!important;background:rgba(0,0,0,0.5);}
 .page-id-782 br.clear {display: none;}
-.page-id-782 .view h2 {margin:0px;font-family: 'Roboto', sans-serif!important;font-size:42px!important;color:#f4d540;text-shadow:4px 2px 5px #000;}
+.page-id-782 .view h2 {margin:0px;font-family: 'Roboto', sans-serif!important;font-size:26px;color:#f4d540;text-shadow:4px 2px 5px #000;}
 .page-id-782 .view p {font-size:15px!important;}
 .page-id-782 .view a.info {font-weight:700;color:#fff!important;}
 .page-id-782 .view a.info:hover {color:#f4d540!important;text-decoration:none!important;}
+.page-id-782 .seo-row {min-height:340px;padding:30px 40px;}
 
 /* BUTTONS */
 .wout-button, .wout-button:visited {display:inline-block;margin:10px 10px 10px 0px;padding:10px 15px;font-size:14px;border:1px solid #fff;background:transparent;color:#fff!important;text-decoration:none!important;}
 .wout-button:hover {background:#4b4b4e;border:1px solid #4b4b4e;color:#fff!important;text-decoration:none!important;}
-.wout-button:last-child {margin:0;}
+.wout-button:last-child {margin:0; font-size: 12px;}
 
 /* CATLIST */
 .catlist-layout-5 .catlist-title h2, .catlist-layout-6 .catlist-title h2 {color: #f4d540; }
@@ -121,9 +164,11 @@ ul.primary-menu {padding:5px !important;}
 .single-contact #primary {width: 100%; }
 .single-contact #secondary {display: none; }
 
-.single-contact #content img.wp-post-image {display: none; }
-.single-contact #content h1 {text-align: center; }
-.single-contact #content .so-panel {border: 1px solid #565656; margin: 5px; padding: 10px; } 
+.single-contact .site-main img.wp-post-image {display: none; }
+.single-contact .site-main h1 {text-align: center; margin-top:0px;}
+.single-contact .site-main h3 {font-weight:600}
+.single-contact .site-main .so-panel {border: 1px solid #565656;margin: 5px;padding: 10px;margin-bottom: 40px;}
+.single-contact main .contact-details {padding: 0px !important;}
 
 /* PRICES */
 table.prices {width: 100%; border: 1px solid #333; }
